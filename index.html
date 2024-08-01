@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>LANGDING PAGE</title>
+
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/vongXoay.css" />
+    <link rel="stylesheet" href="/css/slider.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <!-- Navigation -->
+      <div id="navigation">
+        <div class="menu_header">
+          <ul class="menu_list">
+            <li>
+              <a class="sub_menu_header-nav_item" href="#sukien">Sự Kiện</a>
+            </li>
+            <li><a class="sub_menu_header-nav_item" href="#tile">Tỉ Lệ</a></li>
+            <li>
+              <a class="sub_menu_header-nav_item" href="#kiemtra"
+                >Bài Kiểm Tra
+              </a>
+            </li>
+            <li>
+              <a class="sub_menu_header-nav_item" href="#befast">BE FAST</a>
+            </li>
+            <li>
+              <a class="sub_menu_header-nav_item" href="#nguyennhan"
+                >Nguyên Nhân</a
+              >
+            </li>
+            <li>
+              <a href="/index.html"
+                ><img src="/img/logo.png" class="sub_menu_header-nav_item_img"
+              /></a>
+            </li>
+            <li>
+              <a class="sub_menu_header-nav_item" href="#phongtranh"
+                >Phòng Tránh</a
+              >
+            </li>
+            <li>
+              <a class="sub_menu_header-nav_item" href="#huongdan"
+                >Hướng Dẫn Xử Lý</a
+              >
+            </li>
+            <li>
+              <a class="sub_menu_header-nav_item" href="#baiviet">Bài Viết</a>
+            </li>
+            <li>
+              <a class="sub_menu_header-nav_item" href="#cosoyte">Cơ Sở Y Tế</a>
+            </li>
+            <li>
+              <a class="sub_menu_header-nav_item" href="#chiase">Chia Sẻ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="sub_menu_header">
+          <img src="/img/menuMobile.png" alt="" class="sub_menu_header-img" />
+          <div class="sub_menu_header-nav">
+            <ul class="sub_menu_header-nav_list">
+              <li><a class="sub_menu_header-nav_item" href="">Sự Kiện</a></li>
+              <li><a class="sub_menu_header-nav_item" href="">Tỉ Lệ</a></li>
+              <li>
+                <a class="sub_menu_header-nav_item" href="">Bài Kiểm Tra </a>
+              </li>
+              <li><a class="sub_menu_header-nav_item" href="">BE FAST</a></li>
+              <li>
+                <a class="sub_menu_header-nav_item" href="">Nguyên Nhân</a>
+              </li>
+              <!-- <li>
+                <a href=""><img src="/img/logo.png" /></a>
+              </li> -->
+              <li>
+                <a class="sub_menu_header-nav_item" href="">Phòng Tránh</a>
+              </li>
+              <li>
+                <a class="sub_menu_header-nav_item" href="">Hướng Dẫn Xử Lý</a>
+              </li>
+              <li><a class="sub_menu_header-nav_item" href="">Bài Viết</a></li>
+              <li>
+                <a class="sub_menu_header-nav_item" href="">Cơ Sở Y Tế</a>
+              </li>
+              <li><a class="sub_menu_header-nav_item" href="">Chia Sẻ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- white-line -->
+      <hr class="line-menu" />
+
+      <!-- Slider -->
+      <section class="slide_suKien" id="sukien">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <!-- <div class="numbertext">1 / 3</div> -->
+            <img src="./img/anh01.png" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <!-- <div class="numbertext">2 / 3</div> -->
+            <img src="./img/anh02.png" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <!-- <div class="numbertext">3 / 3</div> -->
+            <img src="./img/anh03.jpg" style="width: 100%" />
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </section>
+
+      <!-- Section 1 -->
+      <section class="section_1 class-widthFixed" id="sukien">
+        <div class="haeder-bg">
+          <!-- Content -->
+          <div class="text_header">
+            <h1>
+              "ĐỘT QUỴ - HIỂM HOẠ THẦM LẶNG"<br />
+              HÃY CẢNH GIÁC
+            </h1>
+
+            <p>
+              Đột quỵ là một trong những nguyên nhân hàng đầu gây tử vong và tàn
+              tật trên toàn thế giới. Để bảo vệ sức khỏe của bản thân và những
+              người thân yêu, việc nhận biết sớm các triệu chứng và hiểu rõ về
+              nguyên nhân, cách phòng ngừa và xử lý đột quỵ là vô cùng quan
+              trọng.
+            </p>
+
+            <!-- Nut chuan doan -->
+            <div class="chuanDoanOnline">
+              <a href="/html/formChuanDoanOnline.html">Chuẩn Đoán Online</a>
+            </div>
+          </div>
+        </div>
+        <div class="hinh_head">
+          <img src="/img/Doctors-rafiki.png" />
+        </div>
+      </section>
+
+      <!-- Section 2: Đột quỵ-->
+      <section class="KNDotQuy" id="tile">
+        <div class="tongthe_kNdotquy">
+          <div class="content_DotQuy">
+            <img src="/img/Science-amico.png" />
+
+            <h2>ĐỘT QUỴ (STROKE)</h2>
+            <hr class="duongLine" />
+            <p>
+              Đột quỵ là một tổn thương đến não xảy ra khi dòng máu cung cấp cho
+              não bị gián đoạn hoặc giảm đáng kể. Não bị thiếu ô-xy và dinh
+              dưỡng và các tế bào não bắt đầu chết trong vòng vài phút. Vì lý do
+              đó, đột quỵ được coi là một tình huống cấp cứu y tế và cần có chẩn
+              đoán và điều trị kịp thời.
+            </p>
+          </div>
+          <div class="nen_dotquy">
+            <div class="chart-container">
+              <div class="chart">
+                <h3>Tỷ lệ đột quỵ tại Việt Nam dựa trên dân số</h3>
+                <canvas id="vietnamChart"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Section 3:  KiemTRaDotQuy -->
+      <section class="kiemTraDotQuy" id="kiemtra">
+        <div class="text-kiemTraDotQuy">
+          <h1>BÀI KIỂM TRA ĐỨNG 1 CHÂN KIỂM TRA ĐỘT QUỴ</h1>
+          <div class="CacBuoc">
+            <ul class="khungCacBuocKiemTra">
+              <li><img src="/img/cardiology.png" /></li>
+              <li>
+                Bước 1: Chuẩn bị đồng hồ hoặc điện thoại có chức năng bấm giờ.
+              </li>
+            </ul>
+
+            <ul class="khungCacBuocKiemTra">
+              <li><img src="/img/cardiology.png" /></li>
+              <li>
+                Bước 2: Tháo giày, dép khỏi chân, đưa 2 tay sang ngang hoặc đưa
+                2 tay lên đầu.
+              </li>
+            </ul>
+
+            <ul class="khungCacBuocKiemTra">
+              <li><img src="/img/cardiology.png" /></li>
+              <li>
+                Bước 3: Dùng một chân làm trụ, chân còn lại co lên vuông góc với
+                chân trụ.
+              </li>
+            </ul>
+
+            <ul class="khungCacBuocKiemTra">
+              <li><img src="/img/cardiology.png" /></li>
+              <li>Bước 4: Nhắm mắt, giữ nguyên tư thế và bắt đầu tính giờ.</li>
+            </ul>
+          </div>
+
+          <div class="demGio">
+            <!-- <h1>Countdown Timer</h1> -->
+            <button class="nutDemGio" onclick="startTimer()">
+              Bắt Đầu Tính Giờ
+            </button>
+            <div class="soDemGio" id="timer">20</div>
+          </div>
+        </div>
+        <div class="img-kiemTraDotQuy">
+          <img src="/img/Doctor-rafiki.png" />
+        </div>
+      </section>
+
+      <!--Section 4: BEFAST -->
+      <section class="BeFast" id="befast">
+        <div class="CacBeFast">
+          <h2>Quy tắc BE FAST: Dấu Hiệu Nhận Biết Sớm Về Đột Quỵ</h2>
+          <div class="hangBeFast">
+            <div class="col-4">
+              <img src="/img/daudau.png" />
+              <h3>B (BALANCE)</h3>
+              <p>
+                Diễn tả triệu chứng khi bệnh nhân đột ngột mất thăng bằng, chóng
+                mặt, đau đầu dữ dội và mất khả năng phối hợp vận động
+              </p>
+            </div>
+
+            <div class="col-4">
+              <img src="/img/mat.png" />
+              <h3>E (EYESIGHT)</h3>
+              <p>
+                Thể hiện việc bệnh nhân bị mờ mắt (giảm thị lực) hoặc mất hoàn
+                toàn thị lực của 1 hoặc cả 2 mắt.
+              </p>
+            </div>
+
+            <div class="col-4">
+              <img src="/img/dauNuaMat.png" />
+              <h3>F (FACE)</h3>
+              <p>
+                Miêu tả sự biến đổi của khuôn mặt, bệnh nhân có thể bị liệt, méo
+                miệng, nhân trung bị lệch, thể hiện rõ nhất khi bệnh nhân cười
+                mở miệng lớn.
+              </p>
+            </div>
+          </div>
+
+          <!-- Hang 2 -->
+          <div class="hangBeFast">
+            <div class="col-4">
+              <img src="/img/tay.png" />
+              <h3>A (ARM)</h3>
+              <p>
+                Khó hoặc không thể cử động tay chân, tê liệt 1 bên cơ thể. Cách
+                xác nhận nhanh chóng nhất là yêu cầu bệnh nhân giơ 2 tay lên và
+                giữ lại cùng 1 lúc.
+              </p>
+            </div>
+
+            <div class="col-4">
+              <img src="/img/GiongNoi.png" />
+              <h3>S (SPEECH)</h3>
+              <p>
+                Khó nói, phát âm không rõ, nói dính chữ, nói ngọng bất thường.
+                Bạn có thể kiểm tra bằng cách yêu cầu người nghi ngờ bị đột quỵ
+                lặp lại một câu đơn giản bạn vừa nói.
+              </p>
+            </div>
+
+            <div class="col-4">
+              <img src="/img/24-hours.png" />
+              <h3>T (TIME)</h3>
+              <p>
+                Khi xuất hiện đột ngột các triệu chứng trên hãy nhanh chóng gọi
+                115 hoặc đưa bệnh nhân đến cơ sở y tế gần nhất để được cấp cứu
+                kịp thời.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Section 5: NguyenNhan -->
+      <section class="nguyenNhan" id="nguyennhan">
+        <h2>NGUYÊN NHÂN GÂY ĐỘT QUỴ</h2>
+        <div class="nguyenNhan_1">
+          <img class="imgto" src="/img/Hospital bed-amico.svg" />
+
+          <div class="text_nguyennhan1">
+            <div class="img-text_nguyennhan1">
+              <img src="/img/edit.png" />
+              <p>Các yếu tố không thể thay đổi:</p>
+            </div>
+
+            <div class="cacNguyenNhan1">
+              <ul class="KhungConNN1">
+                <img src="/img/check.png" />
+                <li>
+                  Tuổi tác: Nguy cơ đột quỵ tăng gấp đôi mỗi 10 năm sau tuổi 55.
+                </li>
+              </ul>
+              <ul class="KhungConNN1">
+                <img src="/img/check.png" />
+                <li>Giới tính: Nam giới có nguy cơ đột quỵ cao hơn nữ giới.</li>
+              </ul>
+              <ul class="KhungConNN1">
+                <img src="/img/check.png" />
+                <li>
+                  Tiền sử gia đình: Có người thân từng bị đột quỵ làm tăng nguy
+                  cơ.
+                </li>
+              </ul>
+              <ul class="KhungConNN1">
+                <img src="/img/check.png" />
+                <li>
+                  Chủng tộc: Người Mỹ gốc Phi có nguy cơ đột quỵ cao gần gấp đôi
+                  người da trắng.
+                </li>
+              </ul>
+            </div>
+
+            <!--  -->
+            <div class="nguyenNhan_1">
+              <div class="text_nguyennhan1">
+                <div class="img-text_nguyennhan1">
+                  <img src="/img/edit.png" />
+                  <p>Các yếu tố bệnh lý:</p>
+                </div>
+
+                <div class="cacNguyenNhan1">
+                  <ul class="KhungConNN1">
+                    <img src="/img/check.png" />
+                    <li>Bệnh tim mạch: Nguy cơ đột quỵ cao hơn.</li>
+                  </ul>
+                  <ul class="KhungConNN1">
+                    <img src="/img/check.png" />
+                    <li>
+                      Cao huyết áp: Gây tổn thương động mạch, dẫn đến xuất huyết
+                      não.
+                    </li>
+                  </ul>
+                  <ul class="KhungConNN1">
+                    <img src="/img/check.png" />
+                    <li>Mỡ máu: Cholesterol cao gây tắc nghẽn mạch máu não.</li>
+                  </ul>
+                  <ul class="KhungConNN1">
+                    <img src="/img/check.png" />
+                    <li>Thừa cân, béo phì và sử dụng chất kích thích</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--  -->
+        </div>
+      </section>
+
+      <!--Section 6: PhongTranh -->
+      <section class="phongTranh" id="phongtranh">
+        <h2 class="tieuDePhongTranh">PHÒNG TRÁNH ĐỘT QUỴ QUA CHẾ ĐỘ ĂN UỐNG</h2>
+        <div class="ndphongtranh">
+          <div id="myBody">
+            <div class="orbit">
+              <div class="center-image">THỰC ĐƠN</div>
+              <ul id="orbit-list_images">
+                <li class="orbit-item">
+                  <div>
+                    <img
+                      class="orbit-item_images"
+                      src="/img/1.caphe.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <p>Cà Phê</p>
+                </li>
+                <li class="orbit-item">
+                  <div>
+                    <img
+                      class="orbit-item_images"
+                      src="/img/2.socola.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <p>Chocolate</p>
+                </li>
+                <li class="orbit-item">
+                  <div>
+                    <img
+                      class="orbit-item_images"
+                      src="/img/3.cachua.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <p>Cà Chua</p>
+                </li>
+                <li class="orbit-item">
+                  <div>
+                    <img
+                      class="orbit-item_images"
+                      src="/img/4.cabeo.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <p>Cá Béo</p>
+                </li>
+                <li class="orbit-item">
+                  <div>
+                    <img
+                      class="orbit-item_images"
+                      src="/img/5.Dau.jpeg"
+                      alt=""
+                    />
+                  </div>
+                  <p>Các Loại Đậu</p>
+                </li>
+                <li class="orbit-item">
+                  <div>
+                    <img
+                      class="orbit-item_images"
+                      src="/img/6.rau.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <p>Rau Xanh</p>
+                </li>
+                <li class="orbit-item">
+                  <div>
+                    <img
+                      class="orbit-item_images"
+                      src="/img/7.traicay.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <p>Trái Cây</p>
+                </li>
+                <li class="orbit-item">
+                  <div>
+                    <img
+                      class="orbit-item_images"
+                      src="/img/9.ngucoc.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <p>Ngũ Cốc</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="text-phongTranh">
+            <img src="/img/Online Doctor-rafiki.png" />
+            <p>
+              Đột quỵ là một căn bệnh nguy hiểm có thể gây ra nhiều biến chứng
+              nghiêm trọng. Tuy nhiên, việc áp dụng một chế độ dinh dưỡng phù
+              hợp có thể giúp bạn phòng ngừa và giảm nguy cơ mắc bệnh này. Hãy
+              lưu ý các nhóm thực phẩm phòng ngừa đột quỵ, cách chế biến và
+              lượng thực phẩm cần thiết để duy trì một chế độ ăn uống cân bằng
+              và lành mạnh. Đồng thời, hãy thay đổi lối sống và duy trì một chế
+              độ dinh dưỡng phù hợp nếu bạn đã từng bị đột quỵ để giảm nguy cơ
+              tái phát.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--Section 7: HuongDan -->
+      <section class="huongdan" id="huongdan">
+        <h2>HƯỚNG DẪN XỬ LÝ KHI GẶP NGƯỜI BỊ ĐỘT QUỴ</h2>
+        <img class="cogai" src="/img/Self confidence-amico.png" />
+
+        <div class="hd">
+          <div class="video-hd">
+            <video controls>
+              <source
+                src="/img/-4471-40e4-a769-c88ad5c56235.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+
+          <div class="text-huongdan">
+            <ul class="khunghd">
+              <img src="/img/check.png" />
+              <li>Đầu tiên giữ cho người bệnh không bị té ngã</li>
+            </ul>
+            <ul class="khunghd">
+              <img src="/img/check.png" />
+              <li>Để nằm trên một mặt phẳng, tránh bị ngạt thở</li>
+            </ul>
+            <ul class="khunghd">
+              <img src="/img/check.png" />
+              <li>
+                Nếu có hiện tượng co giật, sùi bọt mép thì cho người bệnh
+                nghiêng nhẹ qua phải
+              </li>
+            </ul>
+            <ul class="khunghd">
+              <img src="/img/check.png" />
+              <li>
+                Gọi 115 cấp cứu người bệnh, báo cho họ biết người bệnh bị đột
+                quỵ
+              </li>
+            </ul>
+            <ul class="khunghd">
+              <img src="/img/check.png" />
+              <li>Nới lỏng quần áo, dây thắt lưng để người bệnh dễ thở …</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!--Section 8: BaiViet -->
+      <section class="baiViet" id="baiviet">
+        <h1>BÀI VIẾT LIÊN QUAN</h1>
+        <div class="tongthebaiviet">
+          <div class="baiVietChinh">
+            <a href="#" title="BaiVietLienQuan"
+              ><img src="/img/baivietchinh.webp"
+            /></a>
+            <div class="text-baiVietChinh">
+              <h2>
+                Đột quỵ: Nguyên nhân, dấu hiệu nhận biết, cách phòng tránh
+              </h2>
+              <p>
+                Đột quỵ là một trong những nguyên nhân gây tử vong hàng đầu trên
+                thế giới. Trung bình cứ 3 phút lại có 1 ca tử vong do đột quỵ.
+                Đột quỵ là gì? Dấu hiệu đột quỵ bao gồm những gì? Hãy cùng tìm
+                hiểu rõ hơn trong bài viết dưới đây.
+              </p>
+              <a href="/html/ndbaiviet.html"><button>Xem Thêm</button></a>
+            </div>
+          </div>
+
+          <div class="baiVietPhu">
+            <ul class="khungBaiviet">
+              <li>
+                <a href="#" title="BaiVietLienQuan"
+                  ><img src="/img/baiviet1.webp"
+                /></a>
+                <div class="text-baiVietPhu">
+                  <h2>
+                    Đột quỵ sẽ tăng vọt, đặc biệt ở châu Á: Cảnh báo 4 lý do
+                    chính
+                  </h2>
+                  <p>
+                    (NLĐO) - Một báo cáo mới từ Tổ chức Đột quỵ thế giới - Ủy
+                    ban Thần kinh Lancet dự báo số người chết vì đột quỵ trên
+                    toàn cầu sẽ tăng 50% vào năm 2050.
+                  </p>
+                  <a href="/html/ndbaiviet.html"><button>Xem Thêm</button></a>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="khungBaiviet">
+              <li>
+                <a href="#" title="BaiVietLienQuan"
+                  ><img src="/img/dau-hieu-dot-quy.jpg"
+                /></a>
+                <div class="text-baiVietPhu">
+                  <h2>5 DẤU HIỆU ĐỘT QUỴ NGUY HIỂM CẦN LƯU Ý VÀ XỬ TRÍ NGAY</h2>
+                  <p>
+                    Nhận biết sớm những dấu hiệu đột quỵ (hay triệu chứng đột
+                    quỵ theo cách hiểu của nhiều người dân) giúp người bệnh kịp
+                    thời phát hiện “báo động đỏ”, từ đó chủ động ngăn chặn, sơ
+                    cứu nhanh hoặc cấp cứu kịp thời.
+                  </p>
+                  <a href="/html/ndbaiviet.html"><button>Xem Thêm</button></a>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="khungBaiviet">
+              <li>
+                <a href="#" title="BaiVietLienQuan"
+                  ><img src="/img/tam-soat-dot-quy-som.jpg"
+                /></a>
+                <div class="text-baiVietPhu">
+                  <h2>Tầm soát đột quỵ sớm chủ động bảo vệ tính mạng</h2>
+                  <p>
+                    Đột quỵ có thể để lại nhiều biến chứng nghiêm trọng, thậm
+                    chí gây tàn tật vĩnh viễn hoặc tử vong. Tầm soát đột quỵ sớm
+                    là cách hiệu quả giúp mỗi người chủ động giảm thiểu rủi ro
+                    do đột quỵ, bảo vệ sức khỏe và tính mạng.
+                  </p>
+                  <a href="/html/ndbaiviet.html"><button>Xem Thêm</button></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!--Section 9: CoSoYTe -->
+      <section class="cosoyte" id="cosoyte">
+        <h2>DANH SÁCH CƠ SỞ Y TẾ</h2>
+        <div class="tongtheCsyt">
+          <div class="left-danhsachcosoyte">
+            <div class="ndcosoyte">
+              <ul class="khungcsyt">
+                <li>
+                  <h3>BỆNH VIỆN AN BÌNH</h3>
+                  <hr />
+                  <div class="diachi text_csyt">
+                    <img class="icon_Img_csyt" src="/img/address.png" />
+                    <p>Đc: 146 AN BÌNH, P.7, Q.5, TP. HCM</p>
+                  </div>
+
+                  <div class="dt text_csyt">
+                    <img class="icon_Img_csyt" src="/img/telephone-call.png" />
+                    <p>ĐT: (08)9234260</p>
+                  </div>
+                  <div class="email text_csyt">
+                    <img class="icon_Img_csyt" src="/img/email.png" />
+                    <p>Email: anbinhhospital@hcm.vnn.vn</p>
+                  </div>
+                </li>
+              </ul>
+
+              <ul class="khungcsyt">
+                <li>
+                  <h3>BỆNH VIỆN CHỢ RẪY</h3>
+                  <hr />
+                  <div class="diachi text_csyt">
+                    <img class="icon_Img_csyt" src="/img/address.png" />
+                    <p>Đc: 201B NGUYỄN CHÍ THANH, P.12, Q.5, TP.HCM</p>
+                  </div>
+
+                  <div class="dt text_csyt">
+                    <img class="icon_Img_csyt" src="/img/telephone-call.png" />
+                    <p>ĐT: (08)8554137</p>
+                  </div>
+                  <div class="email text_csyt">
+                    <img class="icon_Img_csyt" src="/img/email.png" />
+                    <p>Email: Chưa Cập Nhật</p>
+                  </div>
+                </li>
+              </ul>
+
+              <ul class="khungcsyt">
+                <li>
+                  <h3>BỆNH VIỆN ĐA KHOA SÀI GÒN</h3>
+                  <hr />
+                  <div class="diachi text_csyt">
+                    <img class="icon_Img_csyt" src="/img/address.png" />
+                    <p>Đc: 125 LÊ LỢI, P.BT, Q.1, TP. HCM</p>
+                  </div>
+
+                  <div class="dt text_csyt">
+                    <img class="icon_Img_csyt" src="/img/telephone-call.png" />
+                    <p>ĐT: (08)8291711</p>
+                  </div>
+                  <div class="email text_csyt">
+                    <img class="icon_Img_csyt" src="/img/email.png" />
+                    <p>Email: Chưa Cập Nhật</p>
+                  </div>
+                </li>
+              </ul>
+
+              <button id="xemthemcosoyte">XEM THÊM</button>
+            </div>
+
+            <div class="ndcosoyte ndcosoyte-2" id="ndcosoyte-2">
+              <ul class="khungcsyt">
+                <li>
+                  <h3>BỆNH VIỆN HÙNG VƯƠNG</h3>
+                  <hr />
+                  <div class="diachi text_csyt">
+                    <img class="icon_Img_csyt" src="/img/address.png" />
+                    <p>Đc: 128 HỒNG BÀNG, P.12, Q.5, TP. HCM</p>
+                  </div>
+
+                  <div class="dt text_csyt">
+                    <img class="icon_Img_csyt" src="/img/telephone-call.png" />
+                    <p>ĐT: (08)8550585</p>
+                  </div>
+                  <div class="email text_csyt">
+                    <img class="icon_Img_csyt" src="/img/email.png" />
+                    <p>Đc: 128 HỒNG BÀNG, P.12, Q.5, TP. HCM</p>
+                  </div>
+                </li>
+              </ul>
+
+              <ul class="khungcsyt">
+                <li>
+                  <h3>BỆNH VIỆN THỐNG NHẤT</h3>
+                  <hr />
+                  <div class="diachi text_csyt">
+                    <img class="icon_Img_csyt" src="/img/address.png" />
+                    <p>Đc: 1 LÝ THƯỜNG KIỆT, P.7, Q.TB, TP. HCM</p>
+                  </div>
+
+                  <div class="dt text_csyt">
+                    <img class="icon_Img_csyt" src="/img/telephone-call.png" />
+                    <p>ĐT: (08)8642140</p>
+                  </div>
+                  <div class="email text_csyt">
+                    <img class="icon_Img_csyt" src="/img/email.png" />
+                    <p>Email: Chưa Cập Nhật</p>
+                  </div>
+                </li>
+              </ul>
+              <button id="anbotcosoyte">ẨN BỚT</button>
+            </div>
+          </div>
+
+          <div class="hinh_csyt">
+            <img src="/img/hospital.png" />
+            <div class="xe">
+              <img src="/img/ambulance.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Section 10: LoiKeuGoi -->
+      <section class="keugoi" id="chiase">
+        <div class="tongthe_keugoi">
+          <div class="hinh_keugoi">
+            <img src="/img/Social share-amico.png" />
+          </div>
+
+          <div class="noidung_keugoi">
+            <h2>CHIA SẼ ĐẾN BẠN BÈ VÀ NGƯỜI THÂN</h2>
+
+            <p class="loikeugoi">
+              Những thông tin hữu ích về căn bệnh đột quỵ, để trang bị cho bản
+              thân cũng như gia định những kiến thức cần thiết về căn bệnh này.
+            </p>
+
+            <button id="chiase">CHIA SẺ NGAY</button>
+
+            <h3 class="chiaseHeader" style="display: none">
+              Chia sẻ lên các nền tảng:
+            </h3>
+            <div id="chiaSeForm" class="chia-se-form" style="display: none">
+              <!-- Form chia sẻ -->
+              <button id="facebookBtn">Facebook</button>
+              <button id="twitterBtn">Twitter</button>
+              <button id="instagramBtn">Instagram</button>
+            </div>
+            <!-- Thông báo chia sẻ thành công -->
+            <div id="thongBao" class="thong-bao" style="display: none">
+              <p class="chiasethanhcong">Chia sẻ thành công!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="footer-dotquy">
+        <section class="tongthe_footer">
+          <div class="content">
+            <div class="top">
+              <div class="logo-details">
+                <i class="fab fa-slack"></i>
+                <span class="logo_name">
+                  <img src="/img/logo.png" />
+                </span>
+              </div>
+              <div class="media-icons">
+                <a href="#">
+                  <img src="/img/facebook.png" />
+                </a>
+                <a href="#">
+                  <img src="/img/twitter.png" />
+                </a>
+                <a href="#">
+                  <img src="/img/instagram.png" />
+                </a>
+                <a href="#">
+                  <img src="/img/linkedin.png" />
+                </a>
+                <a href="#">
+                  <img src="/img/youtube.png" />
+                </a>
+              </div>
+            </div>
+            <hr />
+
+            <div class="link-boxes">
+              <ul class="box">
+                <li class="link_name">Sự Kiện</li>
+                <li>
+                  <a class="sub_menu_header-nav_item" href="/index.html"
+                    >Trang chủ</a
+                  >
+                </li>
+                <li>
+                  <a class="sub_menu_header-nav_item" href="#baiviet"
+                    >Bài Viết
+                  </a>
+                </li>
+                <li>
+                  <a class="sub_menu_header-nav_item" href="#befast"
+                    >BE FASST</a
+                  >
+                </li>
+              </ul>
+              <ul class="box">
+                <li class="link_name">Các Vấn đề</li>
+                <li>
+                  <a class="sub_menu_header-nav_item" href="#nguyennhan"
+                    >Nguyên nhân</a
+                  >
+                </li>
+                <li>
+                  <a class="sub_menu_header-nav_item" href="#tile">Đột quỵ</a>
+                </li>
+                <li>
+                  <a class="sub_menu_header-nav_item" href="#huongdan">Xử lý</a>
+                </li>
+              </ul>
+              <ul class="box">
+                <li class="link_name">Liên hệ</li>
+                <li>
+                  <a class="sub_menu_header-nav_item" href="#cosoyte"
+                    >Trạm y tế</a
+                  >
+                </li>
+                <li>
+                  <a class="sub_menu_header-nav_item" href="#cosoyte"
+                    >Phòng khám</a
+                  >
+                </li>
+                <li>
+                  <a class="sub_menu_header-nav_item" href="#cosoyte"
+                    >Bệnh viện
+                  </a>
+                </li>
+                <li>
+                  <a class="sub_menu_header-nav_item" href="#cosoyte"
+                    >Các cơ sở y tế</a
+                  >
+                </li>
+              </ul>
+              <!-- <ul class="box">
+                        <li class="link_name">Courses</li>
+                        <li><a class="sub_menu_header-nav_item" href="#">HTML & CSS</a></li>
+                        <li><a class="sub_menu_header-nav_item" href="#">JavaScript</a></li>
+                        <li><a class="sub_menu_header-nav_item" href="#">Photography</a></li>
+                        <li><a class="sub_menu_header-nav_item" href="#">Photoshop</a></li>
+                    </ul> -->
+              <!-- <ul class="box input-box">
+                <li class="link_name">Nhập Email</li>
+                <li><input type="text" placeholder="Nhập email" /></li>
+                <li><input type="button" value="Xác nhận" /></li>
+              </ul> -->
+            </div>
+          </div>
+
+          <div class="bottom-details">
+            <div class="bottom_text">
+              <span class="copyright_text"
+                >Copyright © 2021 <a href="#">CodingLab.</a>All rights
+                reserved</span
+              >
+              <span class="policy_terms">
+                <a href="#">Privacy policy</a>
+                <a href="#">Terms & condition</a>
+              </span>
+            </div>
+          </div>
+        </section>
+      </footer>
+
+      <!-- Chat box -->
+      <button class="chatbot__button">
+        <span class="material-symbols-outlined">mode_comment</span>
+        <span class="material-symbols-outlined">close</span>
+      </button>
+
+      <div class="chatbot">
+        <div class="chatbot__header">
+          <h3 class="chatbox__title">LIÊN HỆ BÁC SĨ</h3>
+          <span class="material-symbols-outlined">close</span>
+        </div>
+
+        <ul class="chatbot__box">
+          <li class="chatbot__chat incoming">
+            <span class="material-symbols-outlined">smart_toy</span>
+            <p>Cảm ơn bạn đã liên hệ! Bạn cần các bác sĩ giải đáp điều gì?</p>
+          </li>
+
+          <li class="chatbot__chat outgoing">
+            <p>...</p>
+          </li>
+        </ul>
+        <div class="chatbot__input-box">
+          <textarea
+            class="chatbot__textarea"
+            placeholder="Enter a message..."
+            required
+          ></textarea>
+          <span id="send-btn" class="material-symbols-outlined">send</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/bieudo.js"></script>
+    <script src="/js/dongho.js"></script>
+    <script src="/js/cosoyte.js"></script>
+    <script src="/js/share.js"></script>
+    <script src="/js/form.js"></script>
+    <script src="/js/header.js"></script>
+    <script src="/js/ktdq.js"></script>
+    <script src="/js/slider.js"></script>
+    <script src="/js/chatbox.js"></script>
+  </body>
+</html>

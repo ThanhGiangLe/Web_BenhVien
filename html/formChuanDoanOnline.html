@@ -1,0 +1,289 @@
+// file html
+<!DOCTYPE html>
+<html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/css/formChuanDoan.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&family=Playwrite+ES:wght@100..400&family=Tapestry&display=swap"
+        rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- JS MAIL -->
+    <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("CUsLqMVgEnhlQw1cN");
+        })();
+    </script>
+    <!--  -->
+
+</head>
+
+<body>
+    <header class="headerstyle">
+        <h1 id="title" class="title">CHUẨN ĐOÁN ĐỘT QUỴ ONLINE</h1>
+        <p id="description" class="description1"><em>Thank you for filling this survey.<em></p>
+        </h1>
+    </header>
+    <h2 id="bodystyle">
+        <div class="container">
+            <form id="survey-form" method="post">
+                <label class="label" id="name-label" for="name">Họ và tên: </label>
+                <input id="name" type="text" class="fieldset" placeholder="Nhập họ và tên" required />
+
+                <label class="label" id="email-label" for="email"> E-mail:</label>
+                <input id="email" type="email" placeholder="Nhập email của bạn" class="fieldset" required />
+
+                <label class="label" id="number-label" for="number">Tuổi:</label>
+                <input id="number" type="number" min="8" max="99 " placeholder="Nhập tuổi" class="fieldset" required />
+
+                <div class="gioiTinh">
+                    <label class="label" id="number-label" for="number">Giới tính:</label>
+                    <div class="chonGioiTinh">
+                        <input type="radio" id="age1" name="ageForm" value="30">
+                        <label for="age1">Nam</label><br>
+                        <input type="radio" id="age2" name="ageForm" value="60">
+                        <label for="age2">Nữ</label><br>  
+                    </div>
+                    
+                </div>
+                
+
+
+
+                <p class="paragraph caudanhdau">Bạn hãy đánh dấu tình trạng của mình</p>
+
+
+                <label class="label1 cauHoi cau1">
+                    <p>1. Huyết áp của bạn cao bao nhiêu? (0-5 Điểm)</p>
+                    <ul class="traLoiCauHoi">
+                        <li>
+                            <input type="radio" id="huyetAp0" name="huyetAp" value="0">
+                            <label for="huyetAp">Huyết áp bé hơn 135/85 mmHg </label><br>                            
+                        </li>
+                        <li>
+                            <input type="radio" id="huyetAp1" name="huyetAp" value="1">
+                            <label for="huyetAp"> HA tối đa 136 -145 mmHg; huyết áp tối thiểu bé hơn 90 mmHg </label><br>                            
+                        </li>
+                        <li>
+                            <input type="radio" id="huyetAp2" name="huyetAp" value="2">
+                            <label for="huyetAp">HA tối đa 159 mmHg, thời gian≥ 3 năm; uống thuốc kiểm soát không tốt</label><br>                            
+                        </li>
+                        <li>
+                            <input type="radio" id="huyetAp3" name="huyetAp" value="3">
+                            <label for="huyetAp">HA tối đa 159 mmHg, thời gian≥ 3 năm; uống thuốc kiểm soát không tốt</label><br>                            
+                        </li>
+                        <li>
+                            <input type="radio" id="huyetAp4" name="huyetAp" value="4">
+                            <label for="huyetAp">HA ≥160/100 mmHg, uống thuốc kiểm soát không tốt</label><br>                            
+                        </li>
+                        <li>
+                            <input type="radio" id="huyetAp5" name="huyetAp" value="5">
+                            <label for="huyetAp">HA ≥160/1000 mmHg, không uống thuốc huyết áp; tăng HA ở bệnh nhân đã đột quỵ não</label><br>                            
+                        </li>
+                    </ul>
+                </label><br>
+
+                <label class="label1 cauHoi cau2">
+                    <p style="padding: 10px">2. Rung nhĩ/rối loạn nhịp nhĩ nhanh và không đều của tim như thế nào? (0-15 Điểm)</p>
+                    <ul class="traLoiCauHoi">
+                        <li>
+                            <input type="radio" id="rungNhi0" name="rungNhi" value="0">
+                            <label for="rungNhi">Tim bình thường (nhịp đều, tim đập đều)</label><br>                            
+                        </li>
+                        <li>
+                            <input type="radio" id="rungNhi3" name="rungNhi" value="3">
+                            <label for="rungNhi">Nhịp tim không đều, mạch không đều (chưa xác định rung nhĩ)</label><br>                            
+                        </li>
+                        <li>
+                            <input type="radio" id="rungNhi5" name="rungNhi" value="5">
+                            <label for="rungNhi">Rung nhĩ trên điện tim, được điều trị chống đông</label><br>                            
+                        </li>
+                        <li>
+                            <input type="radio" id="rungNhi15" name="rungNhi" value="15">
+                            <label for="rungNhi">Rung nhĩ trên điện tim, được điều trị chống đông</label><br>                            
+                        </li>
+                     </ul>
+                </label><br>
+                
+                <label class="label1 cauHoi cau3">
+                    <p>3. Bạn có đái tháo đường không? (0-4 Điểm) *</p>
+                    <ul class="traLoiCauHoi">
+                        <li>
+                            <input type="radio" id="thaoDuong0" name="thaoDuong" value="0">
+                            <label for="thaoDuong"> Không bị ĐTĐ: Glucose bé hơn 6,4mmol/l; HbA1C ≤5,7% </label><br>                            
+                        </li>
+                        <li>
+                            <input type="radio" id="thaoDuong1" name="thaoDuong" value="1">
+                            <label for="thaoDuong">Giới hạn cao ĐTĐ: Glucose 6,5 - 7,0mmol/l; HbA1C 5,8 -6,5%</label><br>                            
+                        </li>
+                        <li>
+                            <input type="radio" id="thaoDuong2" name="thaoDuong" value="2">
+                            <label for="thaoDuong">Bệnh đái tháo đường (HbA1C bé hơn 7,0%l), thới gian bé hơn 5 năm hoặc điều trị kiểm soát được ĐTĐ</label><br>                            
+                        </li>
+                        <li>
+                            <input type="radio" id="thaoDuong3" name="thaoDuong" value="3">
+                            <label for="thaoDuong">Bệnh ĐTĐ, HbA1C bé hơn 7,5%, thời gian 7,5%, thời gian ít hơn 3 năm</label><br>                            
+                        </li>
+                        <li>
+                            <input type="radio" id="thaoDuong4" name="thaoDuong" value="4">
+                            <label for="thaoDuong">Bệnh ĐTĐ, HbA1C >7,5%, và thời gian >3 năm </label><br>                            
+                        </li>
+                     </ul>
+                </label><br>
+
+                <label class="label1 cauHoi cau4">
+                    <p>4. Cholesterol của bạn tăng (0-3 Điểm)</p>
+                    <ul class="traLoiCauHoi">
+                        <li>
+                            <input type="radio" id="cholesterol0" name="cholesterol" value="0">
+                            <label for="cholesterol">Các chỉ số bình thường (Triglycerid bé hơn 2,3mmol/l; Cholesterol bé hơn 5,2mmol trên lít; HDL-Choles 0,9mmol trên lít)</label><br>                            
+                        </li>
+                        <li>
+                            <input type="radio" id="cholesterol1" name="cholesterol" value="1">
+                            <label for="cholesterol">Rối loạn 01 trong 4 chỉ số</label><br>                            
+                        </li>
+                        <li>
+                            <input type="radio" id="cholesterol2" name="cholesterol" value="2">
+                            <label for="cholesterol">Rối loạn 01 Tăng ít nhất 2 chỉ số và có tăng LDL-cholesterol trong 4 chỉ số</label><br>                            
+                        </li>
+                        <li>
+                            <input type="radio" id="cholesterol3" name="cholesterol" value="3">
+                            <label for="cholesterol">Các chỉ số Tăng cả 3 chỉ số và giảm HDL-cholesterol lớn hơn 0,9mmol trên lít, bình thường Triglycerid bé hơn 2,3mmol trên lít; Cholesterol bé hơn 5,2mmol trên lít; HDL-Choles0,9mmol trên lít</label><br>                            
+                        </li>
+                       
+                     </ul>
+                </label><br>
+
+                <label class="label1 cauHoi cau5">
+                    <p>5. Bạn có thừa cân, béo phì (BMI >25)? (0-2 Điểm)</p>
+                    <ul class="traLoiCauHoi">
+                        <li>
+                            <input type="radio" id="beoPhi0" name="beoPhi" value="0">
+                            <label for="beoPhi">Bình thường (BMI bé hơn 25)</label><br>                            
+                        </li>
+                        <li>
+                            <input type="radio" id="beoPhi1" name="beoPhi" value="1">
+                            <label for="beoPhi">Tiền béo phì (BMI 25-30)</label><br>                            
+                        </li>
+                        <li>
+                            <input type="radio" id="beoPhi2" name="beoPhi" value="2">
+                            <label for="beoPhi">Béo phì (BMI>30)</label><br>                            
+                        </li>
+                       
+                     </ul>
+                </label><br>
+
+                <label class="label1 cauHoi cau6">
+                    <p>6. Mức độ hoạt động thể lực (0-2 Điểm) </p>
+                    <ul class="traLoiCauHoi">
+                        <li>
+                            <input type="radio" id="theLuc0" name="theLuc" value="0">
+                            <label for="theLuc">Hoạt động thể lực bình thường (hoạt động thể lực >300 phút với cường độ trung bình; hoặc 150 phút với cường độ mạnh)</label><br>                            
+                        </li>
+                        <li>
+                            <input type="radio" id="theLuc1" name="theLuc" value="1">
+                            <label for="theLuc">Vận động thế lực giảm (hoạt động thể lực 150–300 phút với cường độ trung bình; hoặc 75–150 phút với cường độ mạnh trong mỗi tuần.)</label><br>                            
+                        </li>
+                        <li>
+                            <input type="radio" id="theLuc2" name="theLuc" value="2">
+                            <label for="theLuc">Hạn chế vận động (vận động ít hơn 150 phút trên ngày cường độ trung bình, hoặc dưới 75 phút cường độ mạnh)</label><br>                            
+                        </li>
+                       
+                     </ul>
+                </label><br>
+
+                <label class="label1 cauHoi cau7">
+                    <p>7. Bạn có tiền sử bệnh tim mạch không? (0-4 Điểm)  </p>
+                    <ul class="traLoiCauHoi">
+                        <li>
+                            <input type="radio" id="timMach0" name="timMach" value="0">
+                            <label for="timMach">Bình thường lâm sàng, điện tim và dưới 40 tuổi</label><br>                            
+                        </li>
+                        <li>
+                            <input type="radio" id="timMach1" name="timMach" value="1">
+                            <label for="timMach">Bình thường lâm sàng, điện tim và trên 40 tuổi</label><br>                            
+                        </li>
+                        <li>
+                            <input type="radio" id="timMach2" name="timMach" value="2">
+                            <label for="timMach">Lâm sàng hoặc điện tim có thiếu máu cơ tim</label><br>                            
+                        </li>
+                        <li>
+                            <input type="radio" id="timMach4" name="timMach" value="4">
+                            <label for="timMach">Đã có tiền sử nhồi máu cơ tim</label><br>                            
+                        </li>
+                        
+                     </ul>
+                </label><br>
+
+                <label class="label1 cauHoi cau8">
+                    <p>8. Bạn có nghiện thuốc lá hoặc ma túy (0-2 Điểm) </p>
+                    <ul class="traLoiCauHoi">
+                        <li>
+                            <input type="radio" id="maTuy0" name="maTuy" value="0">
+                            <label for="maTuy">Không hút thuốc lá</label><br>                            
+                        </li>
+                        <li>
+                            <input type="radio" id="maTuy1" name="maTuy" value="1">
+                            <label for="maTuy">Hút thuốc lá thụ động thường xuyên</label><br>                            
+                        </li>
+                        <li>
+                            <input type="radio" id="maTuy2" name="maTuy" value="2">
+                            <label for="maTuy">Nghiện thuốc lá</label><br>                            
+                        </li>
+                        
+                     </ul>
+                </label><br>
+
+                <label class="label1 cauHoi cau9">
+                    <p>9. Tuổi của bạn trong khoảng nào sau đây? (0,5-3 Điểm) </p>
+                    <ul class="traLoiCauHoi">
+                        <li>
+                            <input type="radio" id="age0.5" name="age" value="0.5">
+                            <label for="age">Nhóm tuối ≤39 tuổi</label><br>                            
+                        </li>
+                        <li>
+                            <input type="radio" id="age1" name="age" value="1">
+                            <label for="age">Nhóm tuối 40-49 tuổi</label><br>                            
+                        </li>
+                        <li>
+                            <input type="radio" id="age2" name="age" value="2">
+                            <label for="age">Nhóm tuổi 50-65 tuổi</label><br>                            
+                        </li>
+                        <li>
+                            <input type="radio" id="age3" name="age" value="3">
+                            <label for="age">Nhóm tuổi ≥ 65 tuổi</label><br>                            
+                        </li>
+                        
+                     </ul>
+                </label><br>
+
+
+                
+                <p class="paragraph">Bạn có thể cung cấp thêm tình trạng của bản thân?</p>
+                <textarea id="Comments-suggestions" class="textarea" name="Comments"
+                    placeholder="Enter your comment(s)/suggestion(s) here...">
+                </textarea>
+                <button type="Submit" id="submit" class="submitbutton" onclick="sendMail()"
+                    ><em>Submit<em></button>
+            </form>
+            <div id="result" style="display: none;">
+                <h3 class="result_show"></h3>
+            </div>
+        </div>
+    </h2>
+    <script src="/js/form.js"></script>
+</body>
+
+</html>
